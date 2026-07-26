@@ -1,7 +1,30 @@
 aid: drafted
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/drafted.png
 name: Drafted
-description: Drafted is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Drafted is a network-recruiting and employee-referral platform, founded in
+  2015 and headquartered in Boston, Massachusetts, and surfaced in the API
+  Evangelist network as a Y Combinator portfolio company. The product helps
+  companies tap their collective network to source, qualify, and hire talent:
+  a Drafted Slackbot delivers weekly intelligent referral recommendations and
+  lets teams submit referrals straight into their ATS from Slack, while NLP,
+  machine learning, and a graph database of the company network extend matching
+  beyond first-degree employee connections to surface higher-quality referrals.
+  Drafted has been used by thousands of companies ranging from startups to large
+  enterprises. This profile was seeded from a VC-portfolio lead; at enrichment
+  time the public web surface (drafted.us) was not serving a live product site
+  and no public API, developer documentation, or specification could be found.
 url: https://raw.githubusercontent.com/api-evangelist/drafted/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Recruiting
+- Hiring
+- Employee Referrals
+- Talent Acquisition
+- Human Resources
+- Slack
+- Professional Networking
 apis: []
+common:
+- type: Website
+  url: https://drafted.us
+- type: LinkedIn
+  url: https://www.linkedin.com/products/drafted---hire-like-a-boss-drafted/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
